@@ -1,0 +1,36 @@
+[data-theme="dark"] {
+    --primary: #7b2cbf;
+    --secondary: #5a189a;
+    --accent: #ff9e00;
+    --text: #e0e0e0;
+    --light: #121212;
+    --dark: #1e1e1e;
+    --gray: #b0b0b0;
+    --card-bg: #252525;
+    --nav-bg: rgba(30, 30, 30, 0.9);
+}
+
+[data-theme="dark"] .background-slider {
+    opacity: 0.2;
+}
+
+[data-theme="dark"] .navbar {
+    background-color: var(--nav-bg);
+    border-bottom: 1px solid #333;
+}
+
+[data-theme="dark"] .skill-item,
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .certificate-card,
+[data-theme="dark"] .contact-form {
+    background-color: var(--card-bg);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+[data-theme="dark"] .theme-toggle {
+    color: var(--accent);
+}
+
+[data-theme="dark"] .section-title span {
+    background: var(--dark);
+}

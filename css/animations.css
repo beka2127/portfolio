@@ -1,0 +1,42 @@
+/* Additional animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { 
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Background transition effects */
+.bg-transition-1 {
+    background-image: url('../assets/bg1.jpg');
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.bg-transition-2 {
+    background-image: url('../assets/bg2.jpg');
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.bg-transition-3 {
+    background-image: url('../assets/bg3.jpg');
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Progress bar animation */
+.progress-fill {
+    animation: progressFill 1.5s ease-out forwards;
+}
+
+@keyframes progressFill {
+    from { width: 0; }
+    to { width: attr(data-percent); }
+}
